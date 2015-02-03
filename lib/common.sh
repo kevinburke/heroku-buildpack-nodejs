@@ -86,5 +86,6 @@ export_env_dir() {
 }
 
 timing() {
-    command gtime --format='%E'
+    env
+    command time --format='%E' cat
 }
