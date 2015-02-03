@@ -84,3 +84,7 @@ export_env_dir() {
     fi
   fi
 }
+
+timing() {
+    command gtime --format='%E'
+}

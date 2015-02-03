@@ -155,7 +155,7 @@ install_npm() {
       info "npm `npm --version` already installed with node"
     else
       info "Downloading and installing npm $npm_engine (replacing version `npm --version`)..."
-      npm install --quiet -g npm@$npm_engine 2>&1 >/dev/null | indent
+      npm install --quiet -g npm@$npm_engine 2>&1 >/dev/null | indent | timing
     fi
     warn_old_npm `npm --version`
   else
